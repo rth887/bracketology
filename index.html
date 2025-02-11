@@ -1,27 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bracket Rankings</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Bracket Seed List</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            padding: 20px; 
+            background-color: #f8f9fa;
+        }
+        h1, h2, h3 { 
+            color: #333; 
+        }
+        table {
+            width: 90%;
+            max-width: 600px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background: #1e3a8a;
+            color: white;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background: #333;
+            color: white;
+        }
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            th, td { font-size: 14px; padding: 8px; }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Bracket Rankings</h1>
-        <p>Live updated bracketology rankings based on performance metrics</p>
-    </header>
-    
-    <main>
-        <h2>Latest Bracket</h2>
-        <iframe width="100%" height="600px" 
-            src="https://docs.google.com/spreadsheets/d/1xgYuhDHPD9Wl1nUbb6S42TXRRSD_vpqsAVraNAJCIcA/edit?gid=0#gid=0">
-        </iframe>
-    </main>
+
+    <h1>Bracket Rankings</h1>
+    <h2>Updated Weekly</h2>
+
+    <table>
+        <tr><th>Seed</th><th>Team</th></tr>
+        <tr><td>1</td><td>Auburn</td></tr>
+        <tr><td>1</td><td>Alabama</td></tr>
+        <tr><td>1</td><td>Purdue</td></tr>
+        <tr><td>1</td><td>Tennessee</td></tr>
+        <tr><td>2</td><td>Texas A&M</td></tr>
+        <tr><td>2</td><td>Duke</td></tr>
+        <tr><td>2</td><td>Florida</td></tr>
+        <tr><td>2</td><td>Houston</td></tr>
+        <tr><td>3</td><td>Arizona</td></tr>
+        <tr><td>3</td><td>Wisconsin</td></tr>
+        <tr><td>3</td><td>Michigan St.</td></tr>
+        <tr><td>3</td><td>Iowa St.</td></tr>
+        <tr><td>4</td><td>Kansas</td></tr>
+        <tr><td>4</td><td>Marquette</td></tr>
+        <tr><td>4</td><td>Kentucky</td></tr>
+        <tr><td>4</td><td>Mississippi</td></tr>
+        <tr><td>5</td><td>UCLA</td></tr>
+        <tr><td>5</td><td>St. John's</td></tr>
+        <tr><td>5</td><td>Michigan</td></tr>
+        <tr><td>5</td><td>Texas Tech</td></tr>
+        <tr><td>6</td><td>Mississippi St.</td></tr>
+        <tr><td>6</td><td>Illinois</td></tr>
+        <tr><td>6</td><td>Creighton</td></tr>
+        <tr><td>6</td><td>Oregon</td></tr>
+        <tr><td>7</td><td>Louisville</td></tr>
+        <tr><td>7</td><td>Memphis</td></tr>
+        <tr><td>7</td><td>Saint Mary's</td></tr>
+        <tr><td>7</td><td>Missouri</td></tr>
+        <tr><td>8</td><td>Maryland</td></tr>
+        <tr><td>8</td><td>Clemson</td></tr>
+        <tr><td>8</td><td>Baylor</td></tr>
+        <tr><td>8</td><td>Oklahoma</td></tr>
+        <tr><td>9</td><td>Nebraska</td></tr>
+        <tr><td>9</td><td>West Virginia</td></tr>
+        <tr><td>9</td><td>Utah St.</td></tr>
+        <tr><td>9</td><td>Connecticut</td></tr>
+        <tr><td>10</td><td>Ohio St.</td></tr>
+        <tr><td>10</td><td>Gonzaga</td></tr>
+        <tr><td>10</td><td>Wake Forest</td></tr>
+        <tr><td>10</td><td>New Mexico</td></tr>
+        <tr><td>11</td><td>Vanderbilt</td></tr>
+        <tr><td>11</td><td>Georgia</td></tr>
+        <tr><td>11</td><td>Texas</td></tr>
+        <tr><td>11</td><td>San Diego St.</td></tr>
+        <tr><td>11</td><td>Arkansas</td></tr>
+        <tr><td>11</td><td>Drake</td></tr>
+        <tr><td>12</td><td>UC San Diego</td></tr>
+        <tr><td>12</td><td>George Mason</td></tr>
+        <tr><td>12</td><td>McNeese St.</td></tr>
+        <tr><td>12</td><td>Akron</td></tr>
+        <tr><td>13</td><td>Yale</td></tr>
+        <tr><td>13</td><td>Samford</td></tr>
+        <tr><td>13</td><td>Arkansas St.</td></tr>
+        <tr><td>13</td><td>High Point</td></tr>
+        <tr><td>14</td><td>Jacksonville St.</td></tr>
+        <tr><td>14</td><td>Utah Valley</td></tr>
+        <tr><td>14</td><td>Montana</td></tr>
+        <tr><td>14</td><td>Lipscomb</td></tr>
+        <tr><td>15</td><td>Cleveland St.</td></tr>
+        <tr><td>15</td><td>Norfolk St.</td></tr>
+        <tr><td>15</td><td>Towson</td></tr>
+        <tr><td>15</td><td>Southern</td></tr>
+        <tr><td>16</td><td>Central Connecticut</td></tr>
+        <tr><td>16</td><td>Merrimack</td></tr>
+        <tr><td>16</td><td>Omaha</td></tr>
+        <tr><td>16</td><td>Bryant</td></tr>
+        <tr><td>16</td><td>Little Rock</td></tr>
+        <tr><td>16</td><td>American</td></tr>
+        
+    </table>
 
     <footer>
-        <p>© 2025 Bracket Project | Updated Weekly</p>
+        <p>2025 Bracket Beasts</p>
     </footer>
+
 </body>
 </html>
