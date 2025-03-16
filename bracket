@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bracket - Running the Hardwood</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f8f9fa; padding: 20px; }
+        h1 { text-align: center; color: #333; }
+        .bracket-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .region {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .region h3 { text-align: center; background: #1e3a8a; color: white; padding: 5px; border-radius: 4px; }
+        .game { padding: 5px; border-bottom: 1px solid #ddd; }
+        .game:last-child { border-bottom: none; }
+        footer { margin-top: 20px; padding: 10px; text-align: center; background: #333; color: white; }
+        a { color: white; text-decoration: none; }
+        @media (max-width: 800px) {
+            .bracket-container { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 500px) {
+            .bracket-container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bracket – March 6, 2025</h1>
+
+    <div class="bracket-container">
+        <div class="region">
+            <h3>South Region</h3>
+            <div class="game">1 Auburn vs. 16 American/SE Missouri*</div>
+            <div class="game">8 Mississippi St. vs. 9 Gonzaga</div>
+            <div class="game">5 Maryland vs. 12 Drake</div>
+            <div class="game">4 Arizona vs. 13 Chattanooga</div>
+            <!-- Add remaining East region matchups -->
+        </div>
+
+        <div class="region">
+            <h3>West Region</h3>
+            <div class="game">1 Duke vs. 16 Quinnipiac/Southern*</div>
+            <div class="game">8 Memphis vs. 9 New Mexico</div>
+            <div class="game">5 Oregon vs. 12 McNeese St.</div>
+            <div class="game">4 Purdue vs. 13 Arkansas St.</div>
+            <!-- Add remaining West region matchups -->
+        </div>
+
+        <div class="region">
+            <h3>East Region</h3>
+            <div class="game">1 Houston vs. 16 Omaha</div>
+            <div class="game">8 UConn vs. 9 Baylor</div>
+            <div class="game">5 Michigan vs. 12 Yale</div>
+            <div class="game">4 Clemson vs. 13 Akron</div>
+            <!-- Add remaining Midwest region matchups -->
+        </div>
+
+        <div class="region">
+            <h3>Midwest Region</h3>
+            <div class="game">1 Florida vs. 16 Norfolk St.</div>
+            <div class="game">8 Creighton vs. 9 Georgia</div>
+            <div class="game">5 Saint Mary's vs. 12 San Diego St./Oklahoma*</div>
+            <div class="game">4 Iowa St. vs. 13 High Point</div>
+            <!-- Add remaining South region matchups -->
+        </div>
+    </div>
+
+    <p style="text-align:center;"><strong>* denotes First Four participant</strong></p>
+
+    <footer>
+        <p>2025 <a href="https://rth887.github.io/bracketology/" target="_blank">Running the Hardwood™</a></p>
+    </footer>
+
+</body>
+</html>
