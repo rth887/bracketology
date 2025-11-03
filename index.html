@@ -25,10 +25,16 @@
         th, td {
             padding: 10px;
             border: 1px solid #ddd;
+            text-align: center; /* Center align all table content */
         }
         th {
             background: #1e3a8a;
             color: white;
+        }
+        /* Style for the Conference Bids table to left-align the conference name for clarity */
+        .conf-table td:first-child {
+            text-align: left;
+            font-weight: bold;
         }
         footer {
             margin-top: 20px;
@@ -82,7 +88,7 @@
         <tr><td>7</td><td>Virginia</td></tr>
         <tr><td>8</td><td>Vanderbilt</td></tr>
         <tr><td>8</td><td>Auburn</td></tr>
-        <tr><td>8</td><td>Wisconsin></td></tr>
+        <tr><td>8</td><td>Wisconsin</td></tr>
         <tr><td>8</td><td>Mississippi</td></tr>
         <tr><td>9</td><td>USC</td></tr>
         <tr><td>9</td><td>Washington</td></tr>
@@ -120,25 +126,27 @@
         <tr><td>16</td><td>Vermont*</td></tr>
         <tr><td>16</td><td>Norfolk St.*</td></tr>
         <tr><td>16</td><td>LIU*</td></tr>
-        
     </table>
 
     <p><strong>* denotes First Four participant</strong></p>
 
     <h2>Bubble Watch</h2>
     <table>
+        <tr><th>Category</th><th>Teams</th></tr>
         <tr><td>Last Four Byes</td><td>Oregon, Oklahoma, Baylor, SMU</td></tr>
         <tr><td>Last Four In</td><td>Cincinnati, Saint Mary's, Indiana, Marquette</td></tr>
         <tr><td>First Four Out</td><td>Texas A&M, Texas, Clemson, Wake Forest</td></tr>
     </table>
 
-     <h2>Conference Bids</h2>
-        <tr><td>Big Ten: 12</td><td>
-        <tr><td>SEC: 10</td><td>
-        <tr><td>Big 12: 8</td><td>
-        <tr><td>ACC: 6</td><td>
-        <tr><td>Big East: 4</td><td>
-        <tr><td>WCC: 2</td><td>    
+    <h2>Conference Bids</h2>
+    <table class="conf-table">
+        <tr><th>Conference</th><th>Bids</th></tr>
+        <tr><td>Big Ten</td><td>12</td></tr>
+        <tr><td>SEC</td><td>10</td></tr>
+        <tr><td>Big 12</td><td>8</td></tr>
+        <tr><td>ACC</td><td>6</td></tr>
+        <tr><td>Big East</td><td>4</td></tr>
+        <tr><td>WCC</td><td>2</td></tr>
     </table>
 
     <footer>
